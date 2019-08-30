@@ -2,6 +2,8 @@ version: '3'
 services:
   db:
     image: postgres:11.5
+    ports:
+      - "3000:3000"
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
   web:

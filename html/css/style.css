@@ -16,6 +16,8 @@ header {
   max-width: 632px;
   margin: 32px auto;
   padding: 0 16px; }
+  .mainBody__title {
+    text-align: center; }
   .mainBody__form {
     display: block; }
   .mainBody__formLavel {
@@ -33,5 +35,23 @@ header {
     border-radius: 3px;
     display: block;
     margin: 24px auto 0; }
+  .mainBody__list {
+    max-width: 400px;
+    margin: 32px auto 0; }
+  .mainBody__listItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 2px solid #a9a9a9; }
+    .mainBody__listItem:first-of-type {
+      border-top: 2px solid #a9a9a9; }
+  .mainBody__shopName {
+    line-height: 28px; }
+  .mainBody__shopReserveBtn {
+    background-color: #cd5c5c;
+    color: #fff;
+    height: 28px;
+    padding: 0 16px;
+    border-radius: 16px; }
 
 /*# sourceMappingURL=style.css.map */

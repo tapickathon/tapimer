@@ -1,0 +1,14 @@
+<div class="mainBody">
+    <h2 class="mainBody__title">予約者情報</h2>
+    <form action="get">
+        <ul class="mainBody__list">
+            <%@reserves.each do |reserve|%>
+                <li class="mainBody__listItem">
+                    <p class="mainBody__userName"><%= reserve.user.name %></p>
+                    <p><%= reserve.menu.name %></p>
+                    <p class="mainBody__reserveTime"><%= reserve.created_at.strftime("%m月%d日 %H時%M分") %></p>
+                </li>
+            <%end%>
+            </ul>
+    </form>
+</div>

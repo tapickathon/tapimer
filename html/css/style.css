@@ -22,10 +22,16 @@ header {
     margin-top: 16px;
     display: block; }
   .mainBody__formInput {
-    margin-top: 8px;
+    margin-top: 6px;
     display: block;
     border-radius: 3px;
     border: #696969 2px solid;
     width: 100%; }
+  .mainBody__formSubmit {
+    background-color: #deb887;
+    padding: 8px 16px;
+    border-radius: 3px;
+    display: block;
+    margin: 24px auto 0; }
 
 /*# sourceMappingURL=style.css.map */

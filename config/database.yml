@@ -8,8 +8,8 @@ default: &default
 
 development:
   <<: *default
-  database: tempus_development
+  database: tapimer_development
 
 test:
   <<: *default
-  database: tempus_test
+  database: tapimer_test

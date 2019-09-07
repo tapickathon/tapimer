@@ -1,0 +1,4 @@
+<% @menus.each do |menu|%>
+    <p><%= menu.name %></p>
+    <%= button_to "予約", "/shops/reserve/#{menu.id}", {method: :get} %>
+<% end %>

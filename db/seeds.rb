@@ -31,21 +31,35 @@ if User.find_by(email: "bbb@gmail.com").nil?
     User.create!(
         name:"delta",
         email:"bbb@gmail.com",
-        password:"234567"
+        password:"123456"
     )
 end
 if User.find_by(email: "ccc@gmail.com").nil?
     User.create!(
         name:"minako",
         email:"ccc@gmail.com",
-        password:"345678"
+        password:"123456"
     )
 end
 if Shop.find_by(email: "123@gmail.com").nil?
     Shop.create!(
-        name:"123",
+        name:"ごんちゃ",
         email:"123@gmail.com",
-        password:"456789"
+        password:"123456"
+    )
+end
+if Shop.find_by(email: "234@gmail.com").nil?
+    Shop.create!(
+        name:"ここ",
+        email:"234@gmail.com",
+        password:"123456"
+    )
+end
+if Shop.find_by(email: "345@gmail.com").nil?
+    Shop.create!(
+        name:"sharetea",
+        email:"345@gmail.com",
+        password:"123456"
     )
 end
 Reserve.find_or_create_by(
@@ -58,3 +72,4 @@ Reserve.find_or_create_by(
     menu_id: 2,
     user_id: 1
 )
+

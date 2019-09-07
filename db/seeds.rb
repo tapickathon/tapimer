@@ -41,10 +41,20 @@ if User.find_by(email: "ccc@gmail.com").nil?
         password:"345678"
     )
 end
-if Shop.find_by(email: "ddd@gmail.com").nil?
-    User.create!(
-        name:"yagi",
-        email:"ddd@gmail.com",
+if Shop.find_by(email: "123@gmail.com").nil?
+    Shop.create!(
+        name:"123",
+        email:"123@gmail.com",
         password:"456789"
     )
 end
+Reserve.find_or_create_by(
+    id: 1,
+    menu_id: 1,
+    user_id: 1
+)
+Reserve.find_or_create_by(
+    id: 2,
+    menu_id: 2,
+    user_id: 1
+)
